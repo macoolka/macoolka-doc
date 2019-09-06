@@ -1,0 +1,9 @@
+{
+    "macoolka.doc.example": "示例",
+    "macoolka.doc.signature": "签名",
+    "macoolka.doc.since": "v{value}中添加",
+    "macoolka.doc.overview": "概述",
+    "macoolka.doc.contents": "目录",
+    "macoolka.doc.modules": "模块",
+    "macoolka.doc.missing.homepage":"在package.json必须配置homepage."
+}

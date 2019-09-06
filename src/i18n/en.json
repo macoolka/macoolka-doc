@@ -1,0 +1,11 @@
+{
+    "macoolka.doc.example": "Example",
+    "macoolka.doc.signature": "Signature",
+    "macoolka.doc.since": "Added in v{value}",
+    "macoolka.doc.overview": "Overview",
+    "macoolka.doc.contents": "Table of contents",
+    "macoolka.doc.modules": "Modules",
+    "macoolka.doc.missing.homepage":"Missing homepage in package.json"
+
+    
+}

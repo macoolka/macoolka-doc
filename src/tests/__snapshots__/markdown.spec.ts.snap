@@ -1,0 +1,416 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`markdowns print default 1`] = `
+"---
+title: /home/fastspeeed/macoolka/macoolka-doc/src/tests/fixtures/common.ts
+nav_order: 0
+parent: Modules
+---
+
+# Overview
+
+The define a document interface
+
+It will be instanced by markdown or html
+
+---
+
+<h2 class=\\"text-delta\\">Table of contents</h2>
+
+- [Document (interface)](#document-interface)
+- [FormattingElement (interface)](#formattingelement-interface)
+- [Header (interface)](#header-interface)
+- [List (interface)](#list-interface)
+- [markdown (constant)](#markdown-constant)
+- [toc (constant)](#toc-constant)
+
+---
+
+# Document (interface)
+
+The define a Document
+
+**Signature**
+
+\`\`\`ts
+interface Document extends Header, List, FormattingElement {
+  /**
+   *Defines an article
+   */
+  article: (code: string) => string
+  /**
+   *Defines a section that is quoted from another source
+   */
+  blockquote: (code: string[]) => string
+  /**
+   *To create a line break (<br>).
+   */
+  br: () => string
+  /**
+   *Defines a piece of computer code
+   */
+  code: (language: string) => (a: string) => string
+  /**
+   *To create a horizontal rule,
+   */
+  hr: () => string
+  /**
+   *Defines an image
+   */
+  img: (text: string, href: string, title?: string) => string
+  /**
+   *To create a link, Defines the relationship between a document and an external resource
+   */
+  link: (text: string, href: string, title?: string) => string
+  /**
+   *To create paragraphs, use a blank line to separate one or more lines of text
+   */
+  paragraph: (code: string) => string
+  /**
+   *Defines a section in a document
+   */
+  section: (code: string) => string
+  /**
+   *Defines a table
+   */
+  table: (as: string[][]) => string
+}
+\`\`\`
+
+Added in v0.2.0
+
+# FormattingElement (interface)
+
+Format a Element
+You can add emphasis by making text bold or italic
+
+**Signature**
+
+\`\`\`ts
+interface FormattingElement {
+  /**
+   *Defines important text
+   */
+  bold: (code: string) => string
+  /**
+   *The tag defines the title of a work (e.g. a book, a song, a movie, a TV show, a painting, a sculpture, etc.).
+   *定义一个事物的标题
+   */
+  cite: (code: string) => string
+  /**
+   *Defines text that has been deleted from a document
+   */
+  del: (text: string) => string
+  /**
+   *a definition term
+   */
+  dfn: (code: string) => string
+  /**
+   *Defines emphasized text
+   */
+  em: (code: string) => string
+  /**
+   *The tag defines a text that has been inserted into a document.
+   */
+  ins: (code: string) => string
+  /**
+   *Defines italicize text.
+   */
+  italic: (code: string) => string
+  /**
+   *Defines marked text.
+   *Use the tag if you want to highlight parts of your text.
+   */
+  mark: (code: string) => string
+  /**
+   *The tag defines a short quotation.
+   */
+  q: (code: string) => string
+}
+\`\`\`
+
+**Example**
+
+\`\`\`ts
+const a = '1'
+const b = '1'
+const c = a === b
+\`\`\`
+
+Added in v0.2.0
+
+# Header (interface)
+
+create a heading
+The number of number signs you use should correspond to the heading level
+
+**Signature**
+
+\`\`\`ts
+interface Header {
+  h1: (title: string) => string
+  h2: (title: string) => string
+  h3: (title: string) => string
+  h4: (title: string) => string
+  h5: (title: string) => string
+  h6: (title: string) => string
+}
+\`\`\`
+
+Added in v0.2.0
+
+# List (interface)
+
+The define a List
+
+**Signature**
+
+\`\`\`ts
+interface List {
+  /**
+   *Defines an ordered list
+   */
+  ol: (as: string[]) => string
+  /**
+   *Defines an unordered list
+   */
+  ul: (as: string[]) => string
+}
+\`\`\`
+
+Added in v0.2.0
+
+# markdown (constant)
+
+markdown instance on github
+
+**Signature**
+
+\`\`\`ts
+
+export const markdown: Document = ...
+
+\`\`\`
+
+Added in v0.2.0
+
+# toc (constant)
+
+**Signature**
+
+\`\`\`ts
+
+export const toc: any = ...
+
+\`\`\`
+
+Added in v0.2.0
+"
+`;
+
+exports[`markdowns print locale zh 1`] = `
+"---
+title: /home/fastspeeed/macoolka/macoolka-doc/src/tests/fixtures/common.ts
+nav_order: 0
+parent: 模块
+---
+
+# 概述
+
+这定义了文章的接口。
+
+将被 html、markdown 实现
+
+---
+
+<h2 class=\\"text-delta\\">目录</h2>
+
+- [Document (接口)](#document-%E6%8E%A5%E5%8F%A3)
+- [FormattingElement (接口)](#formattingelement-%E6%8E%A5%E5%8F%A3)
+- [Header (接口)](#header-%E6%8E%A5%E5%8F%A3)
+- [List (接口)](#list-%E6%8E%A5%E5%8F%A3)
+- [markdown (常量)](#markdown-%E5%B8%B8%E9%87%8F)
+- [toc (常量)](#toc-%E5%B8%B8%E9%87%8F)
+
+---
+
+# Document (接口)
+
+定义一份文档
+
+**签名**
+
+\`\`\`ts
+interface Document extends Header, List, FormattingElement {
+  /**
+   *标记内容为一篇文章
+   */
+  article: (code: string) => string
+  /**
+   *标记内容为引用别人的论述
+   */
+  blockquote: (code: string[]) => string
+  /**
+   *换行
+   */
+  br: () => string
+  /**
+   *标记内容为一段程序代码
+   */
+  code: (language: string) => (a: string) => string
+  /**
+   *水平线
+   */
+  hr: () => string
+  /**
+   *标记内容为图片
+   */
+  img: (text: string, href: string, title?: string) => string
+  /**
+   *标记内容为链接,一般指向外部资源
+   */
+  link: (text: string, href: string, title?: string) => string
+  /**
+   *标记内容为一个段落
+   */
+  paragraph: (code: string) => string
+  /**
+   *标记内容为一个章节
+   */
+  section: (code: string) => string
+  /**
+   *定义一个表格
+   */
+  table: (as: string[][]) => string
+}
+\`\`\`
+
+v0.2.0 中添加
+
+# FormattingElement (接口)
+
+格式化一个元素，给一个元素加上特殊效果。
+
+**签名**
+
+\`\`\`ts
+interface FormattingElement {
+  /**
+   *定义主要的文本
+   */
+  bold: (code: string) => string
+  /**
+   *The tag defines the title of a work (e.g. a book, a song, a movie, a TV show, a painting, a sculpture, etc.).
+   *定义一个事物的标题
+   */
+  cite: (code: string) => string
+  /**
+   *定义一个删除标记的文本
+   */
+  del: (text: string) => string
+  /**
+   *定义一个术语
+   */
+  dfn: (code: string) => string
+  /**
+   *定义一个强调的文本
+   */
+  em: (code: string) => string
+  /**
+   *定义一个插入的文本
+   */
+  ins: (code: string) => string
+  /**
+   *定义一个斜体文本
+   */
+  italic: (code: string) => string
+  /**
+   *定义一个高亮的文本
+   */
+  mark: (code: string) => string
+  /**
+   *给文本加引号
+   */
+  q: (code: string) => string
+}
+\`\`\`
+
+**示例**
+
+\`\`\`ts
+const a = '1'
+const b = '1'
+const c = a === b
+\`\`\`
+
+v0.2.0 中添加
+
+# Header (接口)
+
+定义了标题
+
+数字为标题的级别
+
+**签名**
+
+\`\`\`ts
+interface Header {
+  h1: (title: string) => string
+  h2: (title: string) => string
+  h3: (title: string) => string
+  h4: (title: string) => string
+  h5: (title: string) => string
+  h6: (title: string) => string
+}
+\`\`\`
+
+v0.2.0 中添加
+
+# List (接口)
+
+列表定义
+
+**签名**
+
+\`\`\`ts
+interface List {
+  /**
+   *有顺序列表
+   */
+  ol: (as: string[]) => string
+  /**
+   *无顺序列表
+   */
+  ul: (as: string[]) => string
+}
+\`\`\`
+
+v0.2.0 中添加
+
+# markdown (常量)
+
+基于 github markdown
+
+**签名**
+
+\`\`\`ts
+
+export const markdown: Document = ...
+
+\`\`\`
+
+v0.2.0 中添加
+
+# toc (常量)
+
+**签名**
+
+\`\`\`ts
+
+export const toc: any = ...
+
+\`\`\`
+
+v0.2.0 中添加
+"
+`;
