@@ -2773,10 +2773,10 @@ macoolka-stream@^0.2.1:
   dependencies:
     fp-ts "^2.0.2"
 
-macoolka-type-ast@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/macoolka-type-ast/-/macoolka-type-ast-0.2.0.tgz#2bbf8c4c99e446508e34974fe254b1eb7c513aad"
-  integrity sha512-/2gVPyvM6UfVOQBMaJolFimTPgIKF4UtxrdfB1vI9V9hAtDWdtoDL5x/l90BxUna0DMSu52raRNryji+WON6SA==
+macoolka-type-ast@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/macoolka-type-ast/-/macoolka-type-ast-0.2.1.tgz#71c5c787bd7e54cfaf9108d575a5170a3b84c2e2"
+  integrity sha512-Ntw7W61WshI6jNEpnZZp7oqhCbS4QAFQ2SDa1IiRPvLqiL/CbbDAH6IHCEbhjl7V5b8t0VvLqy1bw8ko7v71yQ==
   dependencies:
     doctrine "^3.0.0"
     fp-ts "^2.0.2"

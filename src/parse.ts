@@ -56,6 +56,7 @@ export const parse = (files: FileWhereUniqueInput[]) =>
                         a,
                         array.filter(a => a.file === true),
                         array.map(filterModule)
-                    ))
+                    )),
+                
             ))
     );
