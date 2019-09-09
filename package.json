@@ -1,9 +1,7 @@
 {
   "name": "macoolka-doc",
-  "bin": {
-    "doc": "./lib/bin"
-  },
-  "version": "0.2.0",
+  "bin": "lib/bin.js",
+  "version": "0.2.2",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "types": "lib/index.d.ts",
@@ -41,7 +39,6 @@
     "testRegex": "(./src/*|\\.(test|spec))\\.(ts|tsx)$"
   },
   "license": "MIT",
-  
   "repository": {
     "type": "git",
     "url": "https://github.com/macoolka/macoolka-doc.git"
@@ -55,7 +52,7 @@
     "macoolka-prettier": "^0.2.0",
     "macoolka-store-core": "^0.2.2",
     "macoolka-store-fs": "^0.2.0",
-    "macoolka-type-ast": "^0.2.0",
+    "macoolka-type-ast": "^0.2.1",
     "macoolka-type-model": "^0.2.1",
     "markdown-toc": "^1.2.0",
     "rimraf": "^3.0.0"
